@@ -1,13 +1,22 @@
+# Visual Studio files
+*.log
+*.idb
+*.sdf
+*.suo
+
 # Compiled Object files
+*.obj
 *.slo
 *.lo
 *.o
 
 # Compiled Dynamic libraries
+*.dll
 *.so
 *.dylib
 
 # Compiled Static libraries
+*.lib
 *.lai
 *.la
 *.a
