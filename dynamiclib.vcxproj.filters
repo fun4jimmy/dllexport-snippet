@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{D186306C-208E-8942-A276-128B6ECEAE8C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\dl">
+      <UniqueIdentifier>{8B343229-9BEF-2044-A74F-5F24E1BE932E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{03D75B36-AD94-B74B-968A-C9D263D8C839}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dynamiclib\include\dl\dlExport.h">
+      <Filter>include\dl</Filter>
+    </ClInclude>
+    <ClInclude Include="dynamiclib\include\dl\dlFunction.h">
+      <Filter>include\dl</Filter>
+    </ClInclude>
+    <ClInclude Include="dynamiclib\include\dl\dlPragmaExport.h">
+      <Filter>include\dl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dynamiclib\src\dlFunction.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="dynamiclib\src\dlPragmaExport.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

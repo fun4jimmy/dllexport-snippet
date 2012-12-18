@@ -1,0 +1,4 @@
+LIBRARY dynamiclib-with-def
+EXPORTS
+  slFunction                        @1
+  ?slFunctionInNamespace@sl@@YAXXZ  @2
