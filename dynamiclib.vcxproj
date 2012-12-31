@@ -125,7 +125,7 @@
       <AdditionalDependencies>staticlib-with-def.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)dynamiclib-with-def.dll</OutputFile>
       <ImportLibrary>dynamiclib-with-def.lib</ImportLibrary>
-      <AdditionalOptions>/DEF dynamiclib.def %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/DEF:dynamiclib.def %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='with-pragma|Win32'">
@@ -160,7 +160,6 @@
   <ItemGroup>
     <ClInclude Include="dynamiclib\include\dl\dlExport.h" />
     <ClInclude Include="dynamiclib\include\dl\dlFunction.h" />
-    <ClInclude Include="dynamiclib\include\dl\dlPragmaExport.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dynamiclib\src\dlFunction.cpp">

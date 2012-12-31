@@ -115,7 +115,7 @@ solution "dllexport-snippet"
         "staticlib-with-def",
       }
       linkoptions {
-        "/DEF dynamiclib.def"
+        "/DEF:dynamiclib.def"
       }
     configuration "with-pragma"
       links {
