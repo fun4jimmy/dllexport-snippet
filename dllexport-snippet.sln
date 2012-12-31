@@ -1,35 +1,42 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "staticlib", "staticlib.vcxproj", "{F65FA83C-D694-0D44-BC09-A68F63C8AF44}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dynamiclib", "dynamiclib.vcxproj", "{3DFB2D9F-5D8B-1541-90E3-733227950813}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F65FA83C-D694-0D44-BC09-A68F63C8AF44} = {F65FA83C-D694-0D44-BC09-A68F63C8AF44}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "application", "application.vcxproj", "{32D7C5C4-07BB-B340-B576-B15FFD3B98B3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F65FA83C-D694-0D44-BC09-A68F63C8AF44} = {F65FA83C-D694-0D44-BC09-A68F63C8AF44}
+		{3DFB2D9F-5D8B-1541-90E3-733227950813} = {3DFB2D9F-5D8B-1541-90E3-733227950813}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		with-linking|Win32 = with-linking|Win32
 		with-def|Win32 = with-def|Win32
+		with-linking|Win32 = with-linking|Win32
 		with-pragma|Win32 = with-pragma|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F65FA83C-D694-0D44-BC09-A68F63C8AF44}.with-linking|Win32.ActiveCfg = with-linking|Win32
-		{F65FA83C-D694-0D44-BC09-A68F63C8AF44}.with-linking|Win32.Build.0 = with-linking|Win32
 		{F65FA83C-D694-0D44-BC09-A68F63C8AF44}.with-def|Win32.ActiveCfg = with-def|Win32
 		{F65FA83C-D694-0D44-BC09-A68F63C8AF44}.with-def|Win32.Build.0 = with-def|Win32
+		{F65FA83C-D694-0D44-BC09-A68F63C8AF44}.with-linking|Win32.ActiveCfg = with-linking|Win32
+		{F65FA83C-D694-0D44-BC09-A68F63C8AF44}.with-linking|Win32.Build.0 = with-linking|Win32
 		{F65FA83C-D694-0D44-BC09-A68F63C8AF44}.with-pragma|Win32.ActiveCfg = with-pragma|Win32
 		{F65FA83C-D694-0D44-BC09-A68F63C8AF44}.with-pragma|Win32.Build.0 = with-pragma|Win32
-		{3DFB2D9F-5D8B-1541-90E3-733227950813}.with-linking|Win32.ActiveCfg = with-linking|Win32
-		{3DFB2D9F-5D8B-1541-90E3-733227950813}.with-linking|Win32.Build.0 = with-linking|Win32
 		{3DFB2D9F-5D8B-1541-90E3-733227950813}.with-def|Win32.ActiveCfg = with-def|Win32
 		{3DFB2D9F-5D8B-1541-90E3-733227950813}.with-def|Win32.Build.0 = with-def|Win32
+		{3DFB2D9F-5D8B-1541-90E3-733227950813}.with-linking|Win32.ActiveCfg = with-linking|Win32
+		{3DFB2D9F-5D8B-1541-90E3-733227950813}.with-linking|Win32.Build.0 = with-linking|Win32
 		{3DFB2D9F-5D8B-1541-90E3-733227950813}.with-pragma|Win32.ActiveCfg = with-pragma|Win32
 		{3DFB2D9F-5D8B-1541-90E3-733227950813}.with-pragma|Win32.Build.0 = with-pragma|Win32
-		{32D7C5C4-07BB-B340-B576-B15FFD3B98B3}.with-linking|Win32.ActiveCfg = with-linking|Win32
-		{32D7C5C4-07BB-B340-B576-B15FFD3B98B3}.with-linking|Win32.Build.0 = with-linking|Win32
 		{32D7C5C4-07BB-B340-B576-B15FFD3B98B3}.with-def|Win32.ActiveCfg = with-def|Win32
 		{32D7C5C4-07BB-B340-B576-B15FFD3B98B3}.with-def|Win32.Build.0 = with-def|Win32
+		{32D7C5C4-07BB-B340-B576-B15FFD3B98B3}.with-linking|Win32.ActiveCfg = with-linking|Win32
+		{32D7C5C4-07BB-B340-B576-B15FFD3B98B3}.with-linking|Win32.Build.0 = with-linking|Win32
 		{32D7C5C4-07BB-B340-B576-B15FFD3B98B3}.with-pragma|Win32.ActiveCfg = with-pragma|Win32
 		{32D7C5C4-07BB-B340-B576-B15FFD3B98B3}.with-pragma|Win32.Build.0 = with-pragma|Win32
 	EndGlobalSection
