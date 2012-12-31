@@ -1,8 +1,6 @@
-#include <dl/dlPragmaExport.h>
-
 // this is only relevant in the with-pragma configuration
 //
-#if defined(WITH_PRAGMA)
+#if defined(WITH_PRAGMAS)
 
 # if defined(_MSC_VER)
 // for a simple c function the pragma is easy as there is no name mangling
